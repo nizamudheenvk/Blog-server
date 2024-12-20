@@ -1,0 +1,64 @@
+/* Parallax Section */
+.parallax-section {
+    background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .parallax-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  .parallax-section .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Testimonials Section */
+  .testimonials-section {
+    background-color: #f9f9f9;
+  }
+  
+  .testimonials-section h1 {
+    color: #333;
+    font-size: 2.5rem;
+  }
+  
+  .testimonials-section .card {
+    transition: transform 0.3s ease;
+  }
+  
+  .testimonials-section .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Global Styles */
+  body {
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  p, a, button {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+
+
+  .card-img {
+    width: 100%; /* Ensures image spans the card's width */
+    height: 300px; /* Fixes the height */
+    object-fit: cover; /* Crops the image if necessary to fit dimensions */
+    border-radius: 8px 8px 0 0; /* Matches the card's top corners */
+  }
+  
