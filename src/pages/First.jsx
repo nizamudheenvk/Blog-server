@@ -44,7 +44,7 @@ const First = () => {
           </p>
           {isLogin ? (
             <Link to={"/dashbord"} className="btn btn-warning btn-lg shadow">
-              MANAGE YOUR PROJECTS
+              MANAGE YOUR BlOGS
             </Link>
           ) : (
             <Link to={"/login"} className="btn btn-warning btn-lg shadow">
