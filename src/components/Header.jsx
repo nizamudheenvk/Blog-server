@@ -1,17 +1,17 @@
 import React, { useContext } from 'react'
 import { Container, Navbar } from "react-bootstrap";
 import { Link, useNavigate } from 'react-router-dom';
-import { tokenContext } from '../context/tokenAuth';
+// import { tokenContext } from '../context/tokenAuth';
 // import { tokenContext } from '../context/tokenAuth';
 
 
 
 const Header = () => {
-  const {authorizesUser,setAuthorizedUser}= useContext(tokenContext)
+  // const {authorizesUser,setAuthorizedUser}= useContext(tokenContext)
     const navigate = useNavigate()
     const logout=()=>{
         sessionStorage.clear()
-        setAuthorizedUser(false)
+        // setAuthorizedUser(false)
         navigate('/')
     }
 

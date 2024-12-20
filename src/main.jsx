@@ -4,18 +4,18 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import Contextshare from './context/Contextshare.jsx'
-import TokenAuth from './context/tokenAuth.jsx'
+// import tokenAuth from './context/tokenAuth.jsx'
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <TokenAuth>
+   {/* <tokenAuth> */}
   <Contextshare>
     <BrowserRouter>
     <App />
     </BrowserRouter>
     </Contextshare>
-    </TokenAuth>
+    {/* </tokenAuth> */}
   </StrictMode>,
 )
